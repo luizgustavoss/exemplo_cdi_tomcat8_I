@@ -1,0 +1,9 @@
+package com.acme.corp.modelo;
+
+import java.util.List;
+
+public interface UnidadeDeMedidaRepository {
+
+	
+	public List<UnidadeDeMedida> recuperarTodasUnidadesDeMedida() throws PersistenceException;
+}

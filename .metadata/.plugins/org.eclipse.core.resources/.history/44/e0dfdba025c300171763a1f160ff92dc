@@ -1,0 +1,88 @@
+package com.acme.corp.modelo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.inject.Inject;
+
+public class UnidadeDeMedidaService {
+
+	@Inject UnidadeDeMedidaRepository repository;
+	
+	/**
+	 * 
+	 * @param repository
+	 * @return
+	 */
+	public List<UnidadeDeMedida> recuperarTodasUnidadesDeMedida(){
+		
+		try {
+			return repository.recuperarTodasUnidadesDeMedida();
+		} catch (PersistenceException e) {
+		}
+		return new ArrayList<UnidadeDeMedida>();
+	}
+	
+	
+	
+	/**
+	 * 
+	 * @param repository
+	 * @return
+	 */
+	public boolean inserir(UnidadeDeMedida unidadeDeMedida){
+		
+		try {
+			return repository.inserir(unidadeDeMedida);
+		} catch (PersistenceException e) {
+		}
+		return false;
+	}
+	
+	
+	
+	/**
+	 * 
+	 * @param repository
+	 * @return
+	 */
+	public boolean alterar(UnidadeDeMedida unidadeDeMedida){
+		
+		try {
+			return repository.alterar(unidadeDeMedida);
+		} catch (PersistenceException e) {
+		}
+		return false;
+	}
+	
+	
+	/**
+	 * 
+	 * @param repository
+	 * @return
+	 */
+	public boolean excluir(String codigo){
+		
+		try {
+			return repository.excluir(codigo);
+		} catch (PersistenceException e) {
+		}
+		return false;
+	}
+	
+	
+	/**
+	 * 
+	 * @param repository
+	 * @return
+	 */
+	public UnidadeDeMedida recuperarPorCodigo(String codigo){
+		
+		try {
+			return repository.recuperarTodasUnidadesDeMedida();
+		} catch (PersistenceException e) {
+			
+		}
+		return new ArrayList<UnidadeDeMedida>();
+	}
+}

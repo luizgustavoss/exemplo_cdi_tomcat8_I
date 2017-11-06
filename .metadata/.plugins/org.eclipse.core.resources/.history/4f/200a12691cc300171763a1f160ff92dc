@@ -1,0 +1,16 @@
+package com.acme.corp.modelo;
+
+import java.util.List;
+
+public interface UnidadeDeMedidaRepository {
+
+	
+	public List<UnidadeDeMedida> recuperarTodasUnidadesDeMedida() throws PersistenceException;
+	
+	public boolean inserir(UnidadeDeMedida unidadeDeMedida) throws PersistenceException;
+	
+	public boolean alterar(UnidadeDeMedida unidadeDeMedida) throws PersistenceException;
+	
+	public boolean excluir(String codigo) throws PersistenceException;
+	
+}

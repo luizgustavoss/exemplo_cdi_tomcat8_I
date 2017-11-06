@@ -1,0 +1,6 @@
+package com.acme.corp.controlle;
+
+@Path("/fazendas")
+public class UnidadeDeMedidaControle {
+
+}

@@ -1,0 +1,5 @@
+package com.acme.corp.infraestrutura;
+
+public class UnidadeDeMedidaDAO {
+
+}

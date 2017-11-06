@@ -1,0 +1,17 @@
+package com.acme.corp.modelo;
+
+import java.util.List;
+
+public class UnidadeDeMedidaService {
+
+	
+	public List<UnidadeDeMedida> recuperarTodasUnidadesDeMedida(UnidadeDeMedidaRepository repository){
+		
+		try {
+			return repository.recuperarTodasUnidadesDeMedida();
+		} catch (PersistenceException e) {
+			
+		}
+		return null;
+	}
+}

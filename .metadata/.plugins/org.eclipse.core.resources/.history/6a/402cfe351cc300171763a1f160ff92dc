@@ -1,0 +1,7 @@
+package com.acme.corp.infraestrutura;
+
+import com.acme.corp.modelo.UnidadeDeMedidaRepository;
+
+public class UnidadeDeMedidaDAO implements UnidadeDeMedidaRepository{
+
+}

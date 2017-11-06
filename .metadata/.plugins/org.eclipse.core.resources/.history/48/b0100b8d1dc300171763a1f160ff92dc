@@ -1,0 +1,50 @@
+package com.acme.corp.infraestrutura;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.acme.corp.modelo.PersistenceException;
+import com.acme.corp.modelo.UnidadeDeMedida;
+import com.acme.corp.modelo.UnidadeDeMedidaRepository;
+
+public class UnidadeDeMedidaDAO implements UnidadeDeMedidaRepository{
+
+	private static Map<String, UnidadeDeMedida> unidadesDeMedida = new HashMap<String, UnidadeDeMedida>();
+	
+	public List<UnidadeDeMedida> recuperarTodasUnidadesDeMedida()
+			throws PersistenceException {
+
+		List<UnidadeDeMedida> unidades = new ArrayList<UnidadeDeMedida>();
+		
+		unidades.addAll(unidadesDeMedida.values());
+		
+		return unidades;
+	}
+
+	public boolean inserir(UnidadeDeMedida unidadeDeMedida)
+			throws PersistenceException {
+
+		return false;
+	}
+
+	public boolean alterar(UnidadeDeMedida unidadeDeMedida)
+			throws PersistenceException {
+
+		return false;
+	}
+
+	public boolean excluir(String codigo) throws PersistenceException {
+
+		return false;
+	}
+
+	public UnidadeDeMedida recuperarPorCodigo(String codigo)
+			throws PersistenceException {
+
+		return null;
+	}
+
+}

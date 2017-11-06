@@ -1,0 +1,13 @@
+package com.acme.corp.modelo;
+
+public class PersistenceException extends Exception{
+
+	
+	public PersistenceException(){
+		super();
+	}
+	
+	public PersistenceException(String mensagem){
+		super(mensagem);
+	}
+}

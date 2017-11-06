@@ -1,0 +1,11 @@
+package com.acme.corp.modelo;
+
+public class UnidadeDeMedida {
+
+	private String codigo;
+	private String descricao;
+	
+	public UnidadeDeMedida(){
+		
+	}
+}

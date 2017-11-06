@@ -1,0 +1,23 @@
+package com.acme.corp.modelo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class UnidadeDeMedidaService {
+
+	
+	/**
+	 * 
+	 * @param repository
+	 * @return
+	 */
+	public List<UnidadeDeMedida> recuperarTodasUnidadesDeMedida(UnidadeDeMedidaRepository repository){
+		
+		try {
+			return repository.recuperarTodasUnidadesDeMedida();
+		} catch (PersistenceException e) {
+			
+		}
+		return new ArrayList<UnidadeDeMedida>();
+	}
+}

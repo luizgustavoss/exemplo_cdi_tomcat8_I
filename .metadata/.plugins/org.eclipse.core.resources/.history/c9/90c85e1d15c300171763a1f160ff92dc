@@ -1,0 +1,9 @@
+package com.acme.corp.modelo;
+
+public interface UnidadeDeMedidaRepository {
+
+	
+	public UnidadeDeMedida recuperarTodasUnidadesDeMedida(){
+		
+	}
+}

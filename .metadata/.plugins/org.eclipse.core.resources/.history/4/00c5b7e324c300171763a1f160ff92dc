@@ -1,0 +1,8 @@
+package com.acme.corp.controlle;
+
+import javax.ws.rs.Path;
+
+@Path("/fazendas")
+public class UnidadeDeMedidaControle {
+
+}
